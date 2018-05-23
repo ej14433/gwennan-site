@@ -38,6 +38,7 @@ header {
     object-fit: fill;
     transition: 1s;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .project:hover img {
@@ -47,6 +48,7 @@ header {
 .project .back{
     transform: rotateY(180deg);
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     transition: 1s;
 
     position: absolute;
@@ -63,9 +65,10 @@ header {
     transform: rotateY(0deg);
 }
 
-.back h2 {
+.back a {
     align-self: center;
     justify-self: center;
+    text-decoration: none;
 }
 
 .palevioletred {
