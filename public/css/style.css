@@ -69,6 +69,13 @@ header {
     align-self: center;
     justify-self: center;
     text-decoration: none;
+    color: black;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.back a:hover {
+    text-decoration: underline;
 }
 
 .palevioletred {
@@ -94,6 +101,11 @@ header {
 @media (max-width : 1555px) {
     .projects {
         grid-template-columns: repeat(2,1fr);
+        margin: 1rem;
+    }
+
+    header {
+        padding-left: 1rem;
     }
 }
 
@@ -105,4 +117,5 @@ header {
     .project {
         height: auto;
     }
+
 }
