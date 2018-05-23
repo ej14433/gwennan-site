@@ -1,4 +1,72 @@
 body {
+    display: grid;
+    font-family: Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+    background-color: whitesmoke;
+
+}
+
+header {
+
+    display: grid;
+    padding-left: 5rem;
+}
+
+.projects {
+
+    padding: 0.5rem;
+    margin: 5rem;
+    margin-top: 2rem;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 5rem;
+
+}
+
+.project {
+
+    position: relative;
+    height: 20rem;
+    overflow: hidden;
+    transform-style: preserve-3d;
+
+}
+
+.project img {
+    max-width: 100%;
+    object-fit: cover;
+    transition: 1s;
+    backface-visibility: hidden;
+}
+
+.project:hover img {
+    transform: rotateY(180deg);
+}
+
+.project .back{
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: 1s;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
     background-color: aqua;
-    color: blue;
+    display: grid;
+
+}
+
+.project:hover .back {
+    transform: rotateY(0deg);
+}
+
+.back h2 {
+    align-self: center;
+    justify-self: center;
 }
