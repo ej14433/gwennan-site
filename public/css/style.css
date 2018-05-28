@@ -1,121 +1,118 @@
 body {
-    display: grid;
-    font-family: Helvetica, sans-serif;
-    margin:0;
-    padding:0;
-    background-color: whitesmoke;
-
+  display: grid;
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
 }
 
 header {
+  display: grid;
+  padding-left: 5rem;
+}
 
-    display: grid;
-    padding-left: 5rem;
+h2 {
+  justify-self: center;
+  align-self: center;
 }
 
 .projects {
+  margin: 5rem;
+  margin-top: 2rem;
 
-    margin: 5rem;
-    margin-top: 2rem;
-
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 5rem;
-
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5rem;
 }
 
 .project {
-
-    position: relative;
-    height: 20rem;
-    overflow: hidden;
-    transform-style: preserve-3d;
-
+  position: relative;
+  height: 20rem;
+  overflow: hidden;
+  transform-style: preserve-3d;
 }
 
 .project img {
-    max-width: 100%;
-    object-fit: fill;
-    transition: 1s;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
+  max-width: 100%;
+  object-fit: fill;
+  transition: 1s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .project:hover img {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
-.project .back{
-    transform: rotateY(180deg);
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    transition: 1s;
+.project .back {
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transition: 1s;
 
-    position: absolute;
-    top: 0;
-    left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 
-    width: 100%;
-    height: 100%;
-    display: grid;
-
+  width: 100%;
+  height: 100%;
+  display: grid;
 }
 
 .project:hover .back {
-    transform: rotateY(0deg);
+  transform: rotateY(0deg);
 }
 
 .back a {
-    align-self: center;
-    justify-self: center;
-    text-decoration: none;
-    color: black;
-    font-size: 2.4rem;
-    font-weight: bold;
+  align-self: center;
+  justify-self: center;
+  text-decoration: none;
+  color: black;
+  font-size: 2.4rem;
+  font-weight: bold;
 }
 
 .back a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .palevioletred {
-    background-color: palevioletred;
+  background-color: palevioletred;
 }
 
 .steelblue {
-    background-color: steelblue;
+  background-color: steelblue;
 }
 
 .lightskyblue {
-    background-color: lightskyblue;
+  background-color: lightskyblue;
 }
 
 .darkslateblue {
-    background-color: darkslateblue;
+  background-color: darkslateblue;
 }
 
 .sandybrown {
-    background-color: sandybrown;
+  background-color: sandybrown;
 }
 
-@media (max-width : 1555px) {
-    .projects {
-        grid-template-columns: repeat(2,1fr);
-    }
+@media (max-width: 1555px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    header {
-        padding-left: 1rem;
-    }
+  header {
+    padding-left: 1rem;
+  }
 }
 
-@media (max-width : 1100px) {
-    .projects {
-        grid-template-columns: repeat(1,1fr);
-        margin: 1rem;
-    }
+@media (max-width: 1100px) {
+  .projects {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 1rem;
+  }
 
-    .project {
-        height: auto;
-    }
-
+  .project {
+    height: auto;
+  }
 }
