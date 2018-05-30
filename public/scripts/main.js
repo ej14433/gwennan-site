@@ -5,8 +5,12 @@ window.addEventListener('load', e => {
 	document.addEventListener('click', e => {
 		const target = e.target;
 
+		if (target.classList.contains('project')) {
+			changeContent(target);
+		}
+
 		if (target.classList.contains('focus')) {
-			changeFocus(e, toggle);
+			changeFocus(toggle);
 			toggle = !toggle;
 		}
 
@@ -16,7 +20,7 @@ window.addEventListener('load', e => {
 	});
 });
 
-function changeFocus(e, toggle) {
+function changeFocus(toggle) {
 	const columns = document.querySelectorAll('.column');
 	columns.forEach(column => {
 		column.style.maxHeight = toggle ? '100vh' : '3rem';
@@ -42,4 +46,27 @@ function selectProject(target) {
 		main.classList.replace('main', 'left');
 		left.classList.replace('left', 'right');
 	}
+}
+
+function changeContent(target) {
+	const imgs = document.querySelectorAll('.showcase-img');
+	let imagesSrcArray = [];
+
+	if (target.classList.contains('atob')) {
+		imagesSrcArray = [
+			'atob-pattern.jpg',
+			'atob-image.jpg',
+			'atob-image.jpg'
+		];
+	} else {
+		imagesSrcArray = [
+			'mamgu.jpg',
+			'sustainability.jpg',
+			'atob-pattern.jpg'
+		];
+	}
+
+	imgs.forEach((img, i) => {
+		img.src = `./img/${imagesSrcArray[i]}`;
+	});
 }
