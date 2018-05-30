@@ -10,7 +10,7 @@ body {
 
 header {
 	display: grid;
-	grid-template-columns: repeat(6, 1fr);
+	grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
 }
 
 .column {
@@ -40,7 +40,7 @@ h1 {
 }
 
 .pink {
-	background-image: url(../img/blue-jug-and-white2.png);
+	background-image: url(../img/blue-bowl2.png);
 	background-position: center;
 	background-size: cover;
 }
@@ -58,7 +58,7 @@ h1 {
 }
 
 .yellow {
-	background-image: url(../img/blue-bowl.jpg);
+	background-image: url(../img/blue-jug-and-white2.png);
 	background-position: center;
 	background-size: cover;
 }
