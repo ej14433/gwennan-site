@@ -40,19 +40,27 @@ h1 {
 }
 
 .pink {
-	background-color: magenta;
+	background-image: url(../img/blue-jug-and-white.jpg);
+	background-position: center;
+	background-size: cover;
 }
 
 .purple {
-	background-color: purple;
+	background-image: url(../img/red-bowl.jpg);
+	background-position: center;
+	background-size: cover;
 }
 
 .orange {
-	background-color: orange;
+	background-image: url(../img/pink-bowl-web.jpg);
+	background-position: center;
+	background-size: cover;
 }
 
 .yellow {
-	background-color: yellowgreen;
+	background-image: url(../img/blue-bowl.jpg);
+	background-position: center;
+	background-size: cover;
 }
 
 .showcase {
