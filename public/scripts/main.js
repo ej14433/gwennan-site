@@ -70,7 +70,7 @@ function changeContent(target) {
 	} else if (target.classList.contains('homage')) {
 		body.style.backgroundColor = 'rgb(236,209,69)';
 		imagesSrcArray = [
-			'home.jpg',
+			'dresser.jpg',
 			'dresser-main-photo.jpg',
 			'image-of-the-right.jpg'
 		];
