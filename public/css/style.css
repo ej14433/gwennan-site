@@ -1,11 +1,13 @@
 body {
 	display: grid;
 	height: 100vh;
-	font-family: Verdana, sans-serif;
+	font-family: Helvetica, sans-serif;
+	font-weight: thin;
 	margin: 0;
 	padding: 0;
 	background-color: whitesmoke;
 	grid-template-rows: auto 1fr;
+	transition: 0.5s;
 }
 
 header {
@@ -117,4 +119,8 @@ h1 {
 	grid-column: 1/2;
 	justify-self: right;
 	opacity: 0.15;
+}
+
+.title {
+	background-color: rgba(0, 0, 0, 0);
 }

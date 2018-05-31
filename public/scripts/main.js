@@ -15,6 +15,10 @@ window.addEventListener('load', e => {
 				(target.classList.contains('title') && toggle)
 			) {
 				changeFocus(toggle);
+				if (target.classList.contains('title')) {
+					const body = document.querySelector('body');
+					body.style.backgroundColor = 'whitesmoke';
+				}
 				toggle = !toggle;
 			}
 		}
@@ -29,7 +33,6 @@ function changeFocus(toggle) {
 	const columns = document.querySelectorAll('.column');
 	columns.forEach(column => {
 		column.style.maxHeight = toggle ? '100vh' : '3rem';
-		column.style.backgroundColor = toggle ? '' : 'whitesmoke';
 		column.firstElementChild.style.color = toggle ? '' : 'black';
 	});
 	const showcase = document.querySelector('.showcase');
@@ -54,24 +57,29 @@ function selectProject(target) {
 }
 
 function changeContent(target) {
+	const body = document.querySelector('body');
 	const imgs = document.querySelectorAll('.showcase-img');
 	let imagesSrcArray = [];
 
 	if (target.classList.contains('atob')) {
+		body.style.backgroundColor = 'rgb(244,113,193)';
 		imagesSrcArray = [
-			'atob-pattern.jpg',
-			'atob-image.jpg',
-			'atob-image.jpg'
+			'final-peice-save-for-web.jpg',
+			'final-peice-save-for-web.jpg',
+			'final-peice-save-for-web.jpg'
 		];
 	} else if (target.classList.contains('homage')) {
+		body.style.backgroundColor = 'rgb(236,209,69)';
 		imagesSrcArray = ['home.jpg', 'sustainability.jpg', 'atob-pattern.jpg'];
 	} else if (target.classList.contains('community-garden')) {
+		body.style.backgroundColor = 'rgb(76,100,198)';
 		imagesSrcArray = [
 			'welcome-pack-real-size.jpg',
 			'table-top-view-2-real-size.jpg',
 			'table-top-real-size.jpg'
 		];
 	} else if (target.classList.contains('about')) {
+		body.style.backgroundColor = 'rgb(235,80,163)';
 		imagesSrcArray = [
 			'mamgu.jpg',
 			'sustainability.jpg',
