@@ -69,7 +69,11 @@ function changeContent(target) {
 		];
 	} else if (target.classList.contains('homage')) {
 		body.style.backgroundColor = 'rgb(236,209,69)';
-		imagesSrcArray = ['home.jpg', 'sustainability.jpg', 'atob-pattern.jpg'];
+		imagesSrcArray = [
+			'home.jpg',
+			'dresser-main-photo.jpg',
+			'image-of-the-right.jpg'
+		];
 	} else if (target.classList.contains('community-garden')) {
 		body.style.backgroundColor = 'rgb(76,100,198)';
 		imagesSrcArray = [
