@@ -33,7 +33,7 @@ function changeFocus(toggle) {
 	const columns = document.querySelectorAll('.column');
 	columns.forEach(column => {
 		column.style.maxHeight = toggle ? '100vh' : '3rem';
-		column.firstElementChild.style.color = toggle ? '' : 'black';
+		// column.firstElementChild.style.color = toggle ? '' : 'black';
 	});
 	const showcase = document.querySelector('.showcase');
 	showcase.style.display = toggle ? 'none' : 'grid';
