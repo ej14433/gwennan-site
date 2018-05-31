@@ -10,8 +10,13 @@ window.addEventListener('load', e => {
 		}
 
 		if (target.classList.contains('focus')) {
-			changeFocus(toggle);
-			toggle = !toggle;
+			if (
+				(target.classList.contains('project') && !toggle) ||
+				(target.classList.contains('title') && toggle)
+			) {
+				changeFocus(toggle);
+				toggle = !toggle;
+			}
 		}
 
 		if (target.classList.contains('showcase-box')) {
@@ -58,7 +63,15 @@ function changeContent(target) {
 			'atob-image.jpg',
 			'atob-image.jpg'
 		];
-	} else {
+	} else if (target.classList.contains('homage')) {
+		imagesSrcArray = ['home.jpg', 'sustainability.jpg', 'atob-pattern.jpg'];
+	} else if (target.classList.contains('community-garden')) {
+		imagesSrcArray = [
+			'welcome-pack-real-size.jpg',
+			'table-top-view-2-real-size.jpg',
+			'table-top-real-size.jpg'
+		];
+	} else if (target.classList.contains('about')) {
 		imagesSrcArray = [
 			'mamgu.jpg',
 			'sustainability.jpg',

@@ -41,33 +41,31 @@ h1 {
 
 .pink {
 	background-image: url(../img/blue-bowl2.png);
-	background-position: center;
+	background-position: center top;
 	background-size: cover;
 }
 
 .purple {
 	background-image: url(../img/red-bowl.jpg);
-	background-position: center;
+	background-position: center top;
 	background-size: cover;
 }
 
 .orange {
 	background-image: url(../img/pink-bowl-web2.png);
-	background-position: center;
+	background-position: center top;
 	background-size: cover;
 }
 
 .yellow {
 	background-image: url(../img/blue-jug-and-white2.png);
-	background-position: center;
+	background-position: center top;
 	background-size: cover;
 }
 
 .showcase {
 	display: none;
 	max-height: 0rem;
-	/* max-height: 100%; */
-	/* display: grid; */
 	align-items: center;
 	justify-items: center;
 }
