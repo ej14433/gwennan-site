@@ -63,9 +63,9 @@ function changeContent(target) {
 	if (target.classList.contains('atob')) {
 		body.style.backgroundColor = 'rgb(244,113,193)';
 		imagesSrcArray = [
+			'second-image-for-AIB.jpg',
 			'final-peice-save-for-web.jpg',
-			'final-peice-save-for-web.jpg',
-			'final-peice-save-for-web.jpg'
+			'image-to-go-in-AIB.jpg'
 		];
 	} else if (target.classList.contains('homage')) {
 		body.style.backgroundColor = 'rgb(236,209,69)';
