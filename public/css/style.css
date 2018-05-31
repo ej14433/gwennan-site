@@ -76,7 +76,6 @@ h1 {
 	display: grid;
 	transition: 1s;
 	justify-items: center;
-	grid-template-rows: 1fr 3rem;
 	align-items: center;
 }
 
@@ -126,8 +125,9 @@ h1 {
 	background-color: rgba(0, 0, 0, 0);
 }
 
-.showcase-box p {
+.content p {
 	color: whitesmoke;
 	font-size: 1rem;
 	width: 20rem;
+	justify-self: center;
 }
