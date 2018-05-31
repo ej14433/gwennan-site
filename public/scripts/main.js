@@ -49,9 +49,9 @@ function selectProject(target) {
 		main.classList.replace('main', 'right');
 		left.classList.replace('left', 'main');
 	} else if (target == right) {
-		right.classList.replace('right', 'main');
-		main.classList.replace('main', 'left');
 		left.classList.replace('left', 'right');
+		main.classList.replace('main', 'left');
+		right.classList.replace('right', 'main');
 	}
 }
 
