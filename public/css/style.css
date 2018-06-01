@@ -135,6 +135,7 @@ h1 {
 
 .about-content {
 	width: 50rem;
+	height: 20rem;
 	display: none;
 	grid-row: 2/3;
 	color: whitesmoke;

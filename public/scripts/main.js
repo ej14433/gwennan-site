@@ -17,7 +17,9 @@ window.addEventListener('load', e => {
 				changeFocus(toggle);
 				if (target.classList.contains('title')) {
 					const body = document.querySelector('body');
+					const about = document.querySelector('.about-content');
 					body.style.backgroundColor = 'whitesmoke';
+					about.style.display = 'none';
 				}
 				toggle = !toggle;
 			}
