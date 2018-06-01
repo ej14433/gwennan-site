@@ -131,6 +131,7 @@ h1 {
 	font-size: 1rem;
 	width: 80vw;
 	justify-self: center;
+	text-align: center;
 }
 
 .about-content {
@@ -140,5 +141,11 @@ h1 {
 	grid-row: 2/3;
 	color: whitesmoke;
 	padding: 5rem;
+	justify-self: center;
+	text-align: center;
+}
+
+.about-content img {
+	height: 5rem;
 	justify-self: center;
 }
