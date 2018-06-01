@@ -70,6 +70,7 @@ h1 {
 	max-height: 0rem;
 	align-items: center;
 	justify-items: center;
+	padding-top: 2rem;
 }
 
 .showcase-box {
@@ -128,6 +129,17 @@ h1 {
 .showcase p {
 	color: whitesmoke;
 	font-size: 1rem;
-	width: 20rem;
+	width: 80vw;
 	justify-self: center;
+}
+
+.about-content {
+	display: grid;
+	grid-row: 2/3;
+	color: whitesmoke;
+	padding: 5rem;
+}
+
+br {
+	line-height: 150%;
 }
