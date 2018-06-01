@@ -134,12 +134,8 @@ h1 {
 }
 
 .about-content {
-	display: grid;
+	display: none;
 	grid-row: 2/3;
 	color: whitesmoke;
 	padding: 5rem;
-}
-
-br {
-	line-height: 150%;
 }
