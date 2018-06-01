@@ -134,8 +134,10 @@ h1 {
 }
 
 .about-content {
+	width: 50rem;
 	display: none;
 	grid-row: 2/3;
 	color: whitesmoke;
 	padding: 5rem;
+	justify-self: center;
 }
