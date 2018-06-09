@@ -149,3 +149,10 @@ h1 {
 	height: 5rem;
 	justify-self: center;
 }
+
+footer {
+	grid-row: 3/4;
+	margin-top: 10rem;
+	margin-bottom: 2rem;
+	justify-self: center;
+}
