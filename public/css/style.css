@@ -2,7 +2,7 @@ body {
 	display: grid;
 	height: 100vh;
 	font-family: Helvetica, sans-serif;
-	font-size: 1.1rem;
+	font-size: 1rem;
 	letter-spacing: 1px;
 	margin: 0;
 	padding: 0;
@@ -127,7 +127,7 @@ h1 {
 }
 
 .showcase p {
-	color: whitesmoke;
+	color: black;
 	font-size: 1rem;
 	width: 80vw;
 	justify-self: center;
@@ -139,7 +139,7 @@ h1 {
 	height: 20rem;
 	display: none;
 	grid-row: 2/3;
-	color: whitesmoke;
+	color: black;
 	padding: 10rem;
 	justify-self: center;
 	text-align: center;
