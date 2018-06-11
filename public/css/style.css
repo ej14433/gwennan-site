@@ -31,7 +31,7 @@ h1 {
 }
 
 .project {
-	color: rgb(194, 194, 194);
+	color: ;
 	font-weight: 100;
 	cursor: pointer;
 	transition: 0.4s;
@@ -60,7 +60,7 @@ h1 {
 }
 
 .yellow {
-	background-image: url(../img/blue-and-white-jug.jpg);
+	background-image: url(../img/blue-and-white-jug.png);
 	background-position: 57% top;
 	background-size: cover;
 }
@@ -140,7 +140,7 @@ h1 {
 	display: none;
 	grid-row: 2/3;
 	color: whitesmoke;
-	padding: 5rem;
+	padding: 10rem;
 	justify-self: center;
 	text-align: center;
 }
@@ -150,10 +150,14 @@ h1 {
 	justify-self: center;
 }
 
+.desc {
+	padding: 3rem;
+}
+
 footer {
 	grid-row: 3/4;
 	margin-top: 10rem;
 	margin-bottom: 2rem;
 	justify-self: center;
-	color: rgb(194, 194, 194);
+	color: black;
 }

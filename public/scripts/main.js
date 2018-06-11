@@ -93,8 +93,8 @@ function changeContent(target) {
 		body.style.backgroundColor = 'rgb(76,100,198)';
 		imagesSrcArray = [
 			'welcome-pack-real-size.jpg',
-			'table-top-view-2-real-size.jpg',
-			'table-top-real-size.jpg'
+			'table-top-real-size.jpg',
+			'table-top-view-2-real-size.jpg'
 		];
 	} else if (target.classList.contains('about')) {
 		about.style.display = 'grid';
