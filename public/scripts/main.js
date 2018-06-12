@@ -68,7 +68,7 @@ function changeContent(target) {
 
 	if (target.classList.contains('atob')) {
 		about.style.display = 'none';
-		desc.innerHTML = `Growing up in the Welsh country Gwennan found herself able to navigate around without the help of road signs, to be dropped in the middle of nowhere, and knowing where she was based on the landscape's familiarities. This is what the pattern portrays, but not through the country side but rather Gwennan’s walk to University; from Peckham to Camberwell. Every square represents a different checkpoint in the landmarks on her route. Using these checkpoints as an indicator of how long I have left to walk.`;
+		desc.innerHTML = `Growing up in the Welsh country Gwennan found herself able to navigate around without the help of road signs, to be dropped in the middle of nowhere, and knowing where she was based on the landscape's familiarities. This is what the pattern portrays, but not through the country side but rather Gwennan’s walk to University; from Peckham to Camberwell. Every square represents a different checkpoint in the landmarks on her route. Using these checkpoints as an indicator of how long she has left to walk.`;
 		showcase.style.display = 'grid';
 		body.style.backgroundColor = 'rgb(244,113,193)';
 		imagesSrcArray = [
@@ -78,7 +78,7 @@ function changeContent(target) {
 		];
 	} else if (target.classList.contains('homage')) {
 		about.style.display = 'none';
-		desc.innerHTML = `Homage was a commentary piece on Gwennan's identity. She portrayed her torn feelings about her connection with Wales by merging her roots and her life now in London. Each ceramic symbolises different elements that she has taken with her from Wales to each of her houses in London, such as the importance of tea and the communal area. As a twist each ceramics have a design flaw, they cannot be used for their visual function. By displaying the ceramic pieces on the traditional Welsh dresser that has been in her family for generations evokes the closeness she feels towards Wales but also her displacement within.`;
+		desc.innerHTML = `Homage was a commentary piece on Gwennan's identity. She portrayed her torn feelings about her connection with Wales by merging her roots and her life now in London. Each ceramic symbolises different elements that she has taken with her from Wales to each of her houses in London, such as the importance of tea and the communal area. As a twist each ceramic has a design flaw, they cannot be used for their visual function. By displaying the ceramic pieces on the traditional Welsh dresser that has been in her family for generations evokes the closeness she feels towards Wales but also her displacement within.`;
 		showcase.style.display = 'grid';
 		body.style.backgroundColor = 'rgb(236,209,69)';
 		imagesSrcArray = [
