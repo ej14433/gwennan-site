@@ -166,6 +166,11 @@ footer {
 	header {
 		grid-template-columns: 1fr;
 	}
+
+	.about-content {
+		padding: 2rem;
+	}
+
 	footer {
 		margin-top: 30rem;
 		grid-row: span 1;
