@@ -135,12 +135,12 @@ h1 {
 }
 
 .about-content {
-	width: 50rem;
+	max-width: 40rem;
 	height: 20rem;
 	display: none;
 	grid-row: 2/3;
 	color: black;
-	padding: 10rem;
+	padding: 5rem;
 	justify-self: center;
 	text-align: center;
 }
@@ -160,4 +160,14 @@ footer {
 	margin-bottom: 2rem;
 	justify-self: center;
 	color: black;
+}
+
+@media (max-width: 870px) {
+	header {
+		grid-template-columns: 1fr;
+	}
+	footer {
+		margin-top: 30rem;
+		grid-row: span 1;
+	}
 }
