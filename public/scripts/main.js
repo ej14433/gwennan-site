@@ -82,9 +82,9 @@ function changeContent(target) {
 		showcase.style.display = 'grid';
 		body.style.backgroundColor = 'rgb(236,209,69)';
 		imagesSrcArray = [
-			'dresser.jpg',
+			'web-on-the-left-homage.jpg',
 			'dresser-main-photo.jpg',
-			'image-of-the-right.jpg'
+			'bowl-for-the-right-homage.jpg'
 		];
 	} else if (target.classList.contains('community-garden')) {
 		about.style.display = 'none';
